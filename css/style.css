@@ -1,3 +1,13 @@
+:root{
+    --button-color:#2196F3;
+--logo-color:#000000;
+--text-color:#212121;
+--fon-color:#FFF;
+--aggrefon-color:#2F303A;
+--aggretext-color:#FFF;
+}
+
+
 ul > li > a {
     color:#000000;
 }
