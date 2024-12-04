@@ -7,8 +7,6 @@
 --aggretext-color:#FFF;
 --text2-color:#757575;
 }
-
-
 body {
 
     font-family: "Roboto" ;
@@ -21,11 +19,15 @@ font-size: 14px;
 font-weight: 500;
 letter-spacing: 0.028;
 }
+.header-item[href]{
+color:var(--logo-color);
+}
 
-.header-item:hover{
+
+ /* .header-item:hover{
     color:rgb(62, 153, 232);
     
-}
+}  */
 .main-blockquote{
     color: white;
 text-align: center;
@@ -42,34 +44,34 @@ font-weight: 700;
 line-height: 187.5%;
 letter-spacing: 0.96px;
 }
-.main-section{
+.main{
 background-color: var(--text-color);
 width: 1600px;
 height: 600px;
 flex-shrink: 0;
 }
-.main-snippet{
+.widget{
     color: var(--aggrefon-color);
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.2;
     text-transform: uppercase;
 }
-.main-text{
+.widget-text{
     color: var(--text-color);
 font-size: 14px;
 font-weight: 400;
 line-height: 0.035; 
 letter-spacing: 0.42px;
 }
-.mein-copy{
+.content-copy{
     color: var(--text2-color);
 font-size: 16px;
 font-weight: 400;
 line-height: 0.04;
 letter-spacing: 0.48px;
 }
-.mein-desc{
+.content-desc{
     color: var(--text-color);
 font-size: 16px;
 font-weight: 500;
@@ -92,4 +94,7 @@ font-size: 14px;
 font-weight: 400;
 line-height:1.71;
 letter-spacing: 0.42px;
+}
+header>nav>ul>li{
+    color:var(--logo-color);
 }
