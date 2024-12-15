@@ -47,6 +47,7 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.028;
+
 }
 /* =============================header==================================== */
 
@@ -55,7 +56,7 @@ letter-spacing: 0.028;
 text-align: center;
 font-size: 44px;
 font-weight: 900;
-/* line-height:; */
+line-height:1.36;
 letter-spacing: 0.2;
 text-transform: uppercase;
 
@@ -66,7 +67,7 @@ text-transform: uppercase;
 text-align: center;
 font-size: 16px;
 font-weight: 700;
-line-height: 187.5%;
+line-height:1.87;
 letter-spacing: 0.96px;
 }
 .biznes{
@@ -84,13 +85,13 @@ padding-bottom:200px ;
     color: var(--text-color);
 font-size: 14px;
 font-weight: 400;
-line-height: 1,71% ; 
+line-height: 1.71; 
 }
 .ditels-snippet{
     color: #212121;
 font-size: 14px;
 font-weight: 700;
-/* line-height:; */
+line-height:1.14;
 text-transform: uppercase;
 }
 /* ================ditels================= */
@@ -98,7 +99,7 @@ text-transform: uppercase;
     color: var(--text2-color);
 font-size: 16px;
 font-weight: 400;
-line-height: 1.18%;
+line-height: 1.18;
 letter-spacing: 0.48px;
 margin-bottom: 10px;
 }
@@ -107,7 +108,7 @@ margin-bottom: 10px;
     margin-top: 30px;
 font-size: 16px;
 font-weight: 500;
-line-height: 1.18%;
+line-height: 1.18;
 letter-spacing: 0.48px;
 margin-bottom: 30px;
 }
@@ -122,7 +123,7 @@ margin-bottom: 30px;
     color: rgba(255, 255, 255, 0.60);
 font-size: 14px;
 font-weight: 400;
-line-height: 1.71%;
+line-height: 1.71;
 letter-spacing: 0.42px;
 }
 .footer{
@@ -132,10 +133,10 @@ letter-spacing: 0.42px;
     color: var(--aggretext-color);
 font-size: 14px;
 font-weight: 400;
-line-height:1.71%;
+line-height:1.71;
 letter-spacing: 0.42px;
 }
-.footer-logo{
+.footer-thumb{
     color:var(--logo-color);
 font-size: 26px;
 font-weight: 700;
