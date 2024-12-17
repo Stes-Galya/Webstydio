@@ -17,10 +17,16 @@ body {
     padding-bottom: 94px;
  }
 .button{
- width: 125px;
-height: 38px;
+ 
 flex-shrink: 0;
-margin: 8px;
+padding: 8px;
+}
+.button-item{
+    color: var(--fon-color);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.625; 
+letter-spacing: 0.48px;
 }
 .cart-text{
     color:black;
@@ -52,7 +58,7 @@ color: var(--fon-color);
 }
 
 .footer{
-  background-color: var(--text-color);  
+  background-color: var(--aggrefon-color);  
 }
 .footer-avatar{
     color: var(--aggretext-color);
