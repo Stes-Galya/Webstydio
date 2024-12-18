@@ -60,7 +60,7 @@ letter-spacing: 0.028px;
     justify-content: center;
 }  */
 .biznes-blockquote{
-    color: white;
+    color: var(--fon-color);
 text-align: center;
 font-size: 44px;
 font-weight: 900;
@@ -105,7 +105,7 @@ letter-spacing: 0.42px;
 width: 270px;
 }
 .ditels-snippet{
-    color: #212121;
+    color:var(--text-color);
 font-size: 14px;
 font-weight: 700;
 line-height:1.14;

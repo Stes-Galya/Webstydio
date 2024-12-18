@@ -17,28 +17,23 @@ body {
     padding-bottom: 94px;
  }
 .button{
- 
-flex-shrink: 0;
-padding: 8px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625; 
+    letter-spacing: 0.48px;
 }
-.button-item{
-    color: var(--fon-color);
-font-size: 16px;
-font-weight: 500;
-line-height: 1.625; 
-letter-spacing: 0.48px;
-}
+
 .cart-text{
-    color:black;
-font-size: 14px;
-font-weight: 400;
-line-height: 0.035; 
-letter-spacing: 0.42px;
-margin: 20px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
 }
 .cart-desc{
     margin-bottom: 20px;
-    color: gray;
+    color: var(--text2-color);
 font-size: 16px;
 font-weight: 500;
 line-height: 0.032;
