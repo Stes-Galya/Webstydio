@@ -167,6 +167,8 @@ letter-spacing: 0.42px;
 }
 .footer{
   background-color: var(--aggrefon-color);  
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-avatar{
     color: var(--aggretext-color);
@@ -183,12 +185,7 @@ line-height: 1.38;
 letter-spacing: 0.78px;
 }
 /* ============== */
-.biznes{
-    padding-bottom: 280px;
-   padding-top: 200px;
-  
-   
-}
+
 .ditels{
     padding-bottom: 94px;
     padding-top: 94px;
@@ -202,8 +199,4 @@ letter-spacing: 0.78px;
 .tim{
     padding-top: 94px;
     padding-bottom: 94px;
-}
-.footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
