@@ -110,6 +110,7 @@ font-size: 14px;
 font-weight: 700;
 line-height:1.14;
 text-transform: uppercase;
+  /* !! */
 }
 /* ================ditels================= */
 .doing-snippet{
@@ -119,6 +120,13 @@ font-weight: 700;
 line-height: 1.16;
 letter-spacing: 1.08px;
 }
+.doing-caption{
+    justify-content: center;
+}
+/* .doing .flex{
+    display: flex;
+    justify-content: flex-end;
+} */
 .tim-snippet{
     color: var(--text-color);
 font-size: 36px;
@@ -178,6 +186,8 @@ letter-spacing: 0.78px;
 .biznes{
     padding-bottom: 280px;
    padding-top: 200px;
+  
+   
 }
 .ditels{
     padding-bottom: 94px;
@@ -186,6 +196,8 @@ letter-spacing: 0.78px;
 
 .doing{
     padding-bottom:94px;
+    display: flex;
+   
 }
 .tim{
     padding-top: 94px;
