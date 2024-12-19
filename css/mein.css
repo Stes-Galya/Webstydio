@@ -30,15 +30,17 @@ body {
     font-weight: 700;
     line-height: 2;
     letter-spacing: 1.08px;
+    background-color:var(--aggretext-color);
 }
 .cart-desc{
     margin-bottom: 20px;
     color: var(--text2-color);
 font-size: 16px;
 font-weight: 500;
-line-height: 0.032;
+line-height: 1.87;
 letter-spacing: 0.48px;
 margin: 10px;
+background-color: var(--aggretext-color);
 }
 .footer-items{
     color: rgba(255, 255, 255, 0.60);
