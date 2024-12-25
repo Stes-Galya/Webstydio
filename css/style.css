@@ -56,18 +56,16 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.028px;
-margin-right: 30px;
 
 
-}
-.header-list{
-    display: flex;
-    margin-right: 344px;
 
 }
+
 .header-items{
     display: flex;
     align-items: center;
+    gap: 50px;
+    margin-left: auto;
 }
 
 .header-avatar{
@@ -93,8 +91,6 @@ text-transform: uppercase;
 width: 696px;
 margin-left: auto;
 margin-right:auto;
-margin-bottom:50px ;
-
 }
 .biznes-button{
     color:var(--aggretext-color);
@@ -133,15 +129,16 @@ width: 270px;
 }
 .ditels-snippet{
     color:var(--text-color);
-font-size: 14px;
-font-weight: 700;
-line-height:1.14;
-text-transform: uppercase;
-letter-spacing: 2.64px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height:1.14;
+    letter-spacing: 0.42px;
+    margin-bottom: 10px;
 }
 .ditels-caption{
-   margin-right: 30px;
+   
     justify-content: center;
+gap: 30px;
 }
 .ditels-item{
     display: flex;
@@ -170,7 +167,7 @@ display: flex;
 gap: 30px;
 }
 .tim-foto{
-    margin-right: 30px;
+    gap: 30px;
 }
 .tim-snippet{
     color: var(--text-color);
@@ -203,7 +200,15 @@ margin-bottom: 30px;
     display: flex;
     background-color: var(--fon-tim);
     text-align: center;
+
 }
+.tim-list{
+    margin-bottom: 30px;
+    display: flex;
+    background-color: var(--fon-tim);
+    text-align: center;
+}
+
 /* =====================tim========================= */
 .footer-avatar{
     color: var(--logo-color);
