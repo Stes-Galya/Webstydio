@@ -32,6 +32,11 @@ body {
     gap: 52px;
 
 }
+.tim-dox{
+ padding-top:30px;
+    padding-bottom: 30px;
+    background-color: var(--aggretext-color);
+}
 .header-container{
     display: flex;
     align-items: center;
@@ -135,13 +140,10 @@ width: 270px;
     letter-spacing: 0.42px;
     margin-bottom: 10px;
 }
-.ditels-caption{
-   
-    justify-content: center;
-gap: 30px;
-}
+
 .ditels-item{
     display: flex;
+    gap: 30px;
 }
 /* ================ditels======================== */
 .doing-snippet{
@@ -184,29 +186,28 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.18;
 letter-spacing: 0.48px;
-margin-bottom: 10px;
+margin-top: 10px;
 }
 .tim-dess{
     color: var(--text-color);
-    margin-top: 30px;
+    
 font-size: 16px;
 font-weight: 500;
 line-height: 1.18;
 letter-spacing: 0.48px;
-margin-bottom: 30px;
 }
 .tim{
-    margin-bottom: 30px;
+   
     display: flex;
     background-color: var(--fon-tim);
     text-align: center;
 
 }
 .tim-list{
-    margin-bottom: 30px;
     display: flex;
     background-color: var(--fon-tim);
     text-align: center;
+    gap: 30px;
 }
 
 /* =====================tim========================= */
@@ -219,6 +220,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
+margin-left: 215px;
 }
 .footer{
   background-color: var(--aggrefon-color);  
