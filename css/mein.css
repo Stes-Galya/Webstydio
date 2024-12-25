@@ -10,8 +10,51 @@
 body {
 
     font-family: "Roboto" ;
+}
+   .header-container{
+        display: flex;
+        align-items: center;
+    
+    }
+
+
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    margin-left: 8px;
+    margin-bottom: 50px;
+    border:none;
+}
+.cart-list{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.cart-item{
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+.cart-foto{
+  
+}
+
+.cart-item:nth-child(n+3){
+    margin-right: 0;
+
+}
+
+
+
+
+
+
+
+
    
-   }
  .cart{
     padding-top: 94px;
     padding-bottom: 94px;
