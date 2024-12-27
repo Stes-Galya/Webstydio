@@ -32,11 +32,7 @@ body {
     gap: 52px;
 
 }
-.tim-dox{
- padding-top:30px;
-    padding-bottom: 30px;
-    background-color: var(--aggretext-color);
-}
+
 .header-container{
     display: flex;
     align-items: center;
@@ -168,6 +164,11 @@ margin-bottom: 50px;
 display: flex;
 gap: 30px;
 }
+.tim-dox{
+    padding-top:30px;
+       padding-bottom: 30px;
+       background-color: var(--aggretext-color);
+   }
 .tim-foto{
     gap: 30px;
 }
@@ -213,8 +214,9 @@ letter-spacing: 0.48px;
 /* =====================tim========================= */
 .footer-avatar{
     color: var(--logo-color);
+    margin-left: 215px;
 }
-.footer-items{
+.footer-list{
     color: rgba(255, 255, 255, 0.60);
 font-size: 14px;
 font-weight: 400;
@@ -240,6 +242,7 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
+margin-left: 215px;
 }
 /* ============== */
 
