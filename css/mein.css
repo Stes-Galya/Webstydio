@@ -6,6 +6,7 @@
 --aggrefon-color:#2F303A;
 --aggretext-color:#FFF;
 --text2-color:#757575;
+--ramka-color:#EEEEEE;
 }
 body {
 
@@ -23,20 +24,20 @@ body {
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
+
 }
-.button{
-    /* margin-left: 8px;
-    margin-bottom: 50px; */
-    
-}
+
 .cart-list{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
 
+
 }
-   
+.cart-item{
+    outline:1px solid var(--ramka-color) ;
+}
  .cart{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -49,21 +50,29 @@ body {
     line-height: 1.625; 
     letter-spacing: 0.48px;
     border:none;
-    gap: 50px;
+   padding: 6px 25px 6px 25px;
+   border-radius: 5px;
 }
+.button:hover{
+    color: var(--aggretext-color);
+    background-color: var(--button-color);
 
+}
 .cart-text{
     color: var(--text-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
     letter-spacing: 1.08px;
-    background-color:var(--aggretext-color);
-  
-
+    background-color:var(--aggretext-color); 
+}
+.cart-dox{
+    padding-top:30px;
+    padding-bottom: 30px;
+    background-color: var(--aggretext-color);
 }
 .cart-desc{
-    margin-top: 10px;
+    margin-top: 4px;
     color: var(--text2-color);
 font-size: 16px;
 font-weight: 500;
@@ -72,26 +81,3 @@ letter-spacing: 0.48px;
 background-color: var(--aggretext-color);
 }
 
-.footer-items[href]{
-color: var(--fon-color);
-}
-
-.footer{
-  background-color: var(--aggrefon-color);  
-}
-.footer-avatar{
-    color: var(--aggretext-color);
-font-size: 14px;
-font-weight: 400;
-line-height:1.71;
-letter-spacing: 0.42px;
-
-}
-
-/* .footer-logo{
-    color:var(--logo-color);
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
-} */
