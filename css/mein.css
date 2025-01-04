@@ -67,9 +67,11 @@ body {
     background-color:var(--aggretext-color); 
 }
 .cart-dox{
-    padding-top:30px;
-    padding-bottom: 30px;
+     padding-top:20px;
+    padding-bottom: 20px; 
     background-color: var(--aggretext-color);
+    padding-left:24px ;
+    padding-right: 24px;
 }
 .cart-desc{
     margin-top: 4px;
