@@ -12,17 +12,31 @@ body {
 
     font-family: "Roboto" ;
 }
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* outline: 1px solid red; */
+   
+}
+.cart-list{
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    }
+    
    .header-container{
         display: flex;
         align-items: center;
     
     }
 
+    
 
 .cart-container{
     display: flex;
     justify-content: center;
-    gap: 8px;
+     gap: 8px; 
     margin-bottom: 50px;
 
 }
@@ -30,7 +44,7 @@ body {
 .cart-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+
 
 
 

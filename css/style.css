@@ -9,19 +9,30 @@
 --fon-tim:#F5F4FA;
 
 }
+
 .container{
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 1px solid red;
+     outline: 1px solid red; 
    
 }
 
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
 body {
 
     font-family: "Roboto" ;
    
    }
+/* =============================header==================================== */
+
+
+
 .header{
   padding-top: 24px;
   padding-bottom: 25px;
@@ -80,6 +91,7 @@ line-height: 1.14;
     color: var(--button-color);
 }
 /* =============================header==================================== */
+/* =================================biznes=============================== */
 
 .biznes-blockquote{
     color: var(--fon-color);
@@ -116,6 +128,7 @@ gap: 50;
 text-align: center;
 }
 /* =====================biznes=============================== */
+/* ================ditels==================================== */
 .ditels{
     padding-top: 94px;
    
@@ -141,7 +154,15 @@ width: 270px;
     display: flex;
     gap: 30px;
 }
+.ditels{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+.doing-caption{
+    flex-basis: calc((100% - 60px) / 3);
+}
 /* ================ditels======================== */
+/* ===================doing========================= */
 .doing-snippet{
     color: var(--text-color);
 font-size: 36px;
@@ -163,17 +184,17 @@ margin-bottom: 50px;
 }
 .doing-list{
 display: flex;
-gap: 30px;
+ gap: 30px; 
+column-gap: 30px;
 }
-/* ===============doing============== */
+/* ===================doing========================= */
+/* =====================tim========================= */
 .tim-dox{
     padding-top:30px;
        padding-bottom: 30px;
        background-color: var(--aggretext-color);
    }
-.tim-foto{
-    gap: 30px;
-}
+
 .tim-snippet{
     color: var(--text-color);
 font-size: 36px;
@@ -181,7 +202,7 @@ font-weight: 700;
 line-height: 1.16;
 letter-spacing: 1.08px;
 justify-content: center;
-margin-bottom: 50px;
+ margin-bottom: 50px; 
 }
 .tim-copy{
     color: var(--text2-color);
@@ -189,7 +210,7 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.18;
 letter-spacing: 0.48px;
-margin-top: 10px;
+margin-top: 10px; 
 }
 .tim-dess{
     color: var(--text-color);
@@ -210,7 +231,14 @@ letter-spacing: 0.48px;
     display: flex;
     background-color: var(--fon-tim);
     text-align: center;
-    gap: 30px;
+    gap: 30px; 
+}
+.tim{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.content-item{
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 /* =====================tim========================= */
@@ -254,15 +282,80 @@ display: inline-block;
 margin-top: 9px;
 }
 
-/* ========================================================== */
+/* ============================footer============================== */
+/* ==============================cart=============================== */
 
-.ditels{
-    padding-bottom: 94px;
-    padding-top: 94px;
+/* -----------------------------------------------------------------------------PORTFOLIO----------------------------------------------------------------------------------------------- */
+.cart-item{
+    flex-basis: calc((100% - 60px) / 3);
+}
+.cart-list{
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    }
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+     gap: 8px; 
+    margin-bottom: 50px;
+
 }
 
+.cart-list{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.tim{
+.cart-item{
+    outline:1px solid var(--ramka-color) ;
+}
+
+ .cart{
     padding-top: 94px;
     padding-bottom: 94px;
+ }
+ .cart-text{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    background-color:var(--aggretext-color); 
 }
+.cart-dox{
+     padding-top:20px;
+    padding-bottom: 20px; 
+    background-color: var(--aggretext-color);
+    padding-left:24px ;
+    padding-right: 24px;
+}
+.cart-desc{
+    margin-top: 4px;
+    color: var(--text2-color);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.87;
+letter-spacing: 0.48px;
+background-color: var(--aggretext-color);
+}
+
+ /* ==============================cart=============================== */
+ /* ========================button moment===================================== */
+.button{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625; 
+    letter-spacing: 0.48px;
+    border:none;
+   padding: 6px 25px 6px 25px;
+   border-radius: 5px;
+}
+.button:hover{
+    color: var(--aggretext-color);
+    background-color: var(--button-color);
+}
+ /* ========================button moment===================================== */
+
