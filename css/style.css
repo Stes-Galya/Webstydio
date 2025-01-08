@@ -14,7 +14,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-     outline: 1px solid red; 
+     /* outline: 1px solid red;  */
    
 }
 
@@ -133,6 +133,35 @@ text-align: center;
     padding-top: 94px;
    
 }
+.ditels-caption::before {
+content: "";
+display: block;
+margin-bottom: 30px;
+width: 270px;
+height: 120px;
+background-color: var(--fon-tim);
+background-image: url(../images/1.png);
+background-position: center;
+background-size: 70px;
+background-repeat: no-repeat;
+
+}
+.ditels-caption:nth-child(2)::before{
+    background-image: url(../images/clock\ .png);
+}
+.ditels-caption:nth-child(3)::before{
+    background-image: url(../images/diagram.png);
+}
+.ditels-caption:nth-child(4)::before{
+    background-image: url(../images/kosmonaft.png);
+}
+/* .ditels-caption:nth-child(3)::before{
+    background-image: url(../images/shkala.jpg);
+}
+.ditels-caption:nth-child(4)::before{
+    background-image: url(../images/kosmonaft.png);
+} */
+
 .ditels-text{
     color: var(--text-color);
 font-size: 14px;
@@ -278,7 +307,6 @@ font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
 display: inline-block;
-
 margin-top: 9px;
 }
 
