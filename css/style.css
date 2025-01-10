@@ -127,6 +127,7 @@ padding-bottom:200px ;
 display: flex;
 gap: 50;
 text-align: center;
+background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../pages/fon.jpg);
 }
 /* =====================biznes=============================== */
 /* ================ditels==================================== */
@@ -156,12 +157,6 @@ background-repeat: no-repeat;
 .ditels-caption:nth-child(4)::before{
     background-image: url(../images/kosmonaft.png);
 }
-/* .ditels-caption:nth-child(3)::before{
-    background-image: url(../images/shkala.jpg);
-}
-.ditels-caption:nth-child(4)::before{
-    background-image: url(../images/kosmonaft.png);
-} */
 
 .ditels-text{
     color: var(--text-color);
