@@ -33,14 +33,14 @@ body {
 .header-element{
     width: 16px;
     height: 12px;
-    fill: var(--text-color);
+    fill: var(--text2-color);
     margin-right: 10px;
 }
 
 .header-svg{
     width: 10px;
 height: 16px;
-fill: var(--text-color);
+fill: var(--text2-color);
 margin-right: 10px;
 }
 
@@ -79,6 +79,8 @@ font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.028px;
 font-style: normal;
+display: flex;
+align-items: center;
 
 }
 
@@ -151,6 +153,26 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)
 .ditels{
     padding-top: 94px;
    
+}
+.doing-caption{
+    position: relative;
+}
+.doing-hozihn{
+    color: var(--fon-color);
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+position: absolute;
+bottom: 0;
+left: 0;
+padding-top: 27px;
+padding-bottom: 27px;
+background-color: rgba(47, 48, 58, 0.80);
+
+width: 100%;
 }
 .ditels-caption::before {
 content: "";
@@ -300,13 +322,15 @@ height: 20px;
 }
 
 .tim-href{
-    background-color:var(--fon-color);
-    border-radius: 40px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    margin-top: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color:var(--fon-color) ; 
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    margin-top: 16px;
 }
 .tim-href:hover{
 background-color: var(--button-color);
