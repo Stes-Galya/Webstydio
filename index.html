@@ -38,7 +38,7 @@
       <section class="biznes">
         <div class="container ">
         <h1 class="biznes-blockquote">Ефективні рішeння для вашого бізнесу</h1>
-        <button class="biznes-button">Замовити послугу</button>
+        <button class="biznes-button" type="button" data-modal-open>Замовити послугу</button>
       </div>
       </section>
       <!-- ditels -->
@@ -339,5 +339,43 @@
     </div>
     </div>
     </footer>
+    <div class=" beg is-hidden " data-modal>
+<div class="windov">
+  <button type="button-close" data-modal-close></button>
+  <button class="button"></button>
+  <h2 class="windov-title">Залиште свої дані, ми вам передзвонимо</h2>
+  <form class="windov-form">
+    <label class="windov-label">Ім'я
+      <input required type="text" class="windov-input">
+      <svg class="windov-svg">
+        <use href="./pages/symbol-defs.svg#icon-person"></use>
+      </svg>
+    </label>
+    <label class="windov-label">Телефон
+      <input  required rtype="tel" class="windov-input">
+      <svg class="windov-svg">
+        <use href="./pages/symbol-defs.svg#icon-phone"></use>
+      </svg>
+    </label>
+    <label  class="windov-label">Пошта
+      <input required type="email" class="windov-input">
+      <svg class="windov-svg">
+        <use href="./pages/symbol-defs.svg#icon-email"></use>
+      </svg>
+    </label>
+    <label class="windov-label">Коментар
+      <textarea  class="windov-coment" placeholder="Введіть текст" id=""></textarea>
+    </label>
+    <div class="windov-checkbox">
+      <input required type="checkbox" class="windov-check" >
+      <p class="windov-text">Погоджуюся з розсилкою та приймаю</p>
+      <a href="#" class="windov-href">Умови договору</a>
+    </div>
+      <button class="windov-button" type="submit">Відправити</button>
+    
+  </form>
+</div>
+    </div>
+    <script src="./js/modal.js " type="module"></script>
   </body>
 </html>
