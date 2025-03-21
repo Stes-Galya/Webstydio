@@ -131,6 +131,17 @@
            
           </ul>
         </address>
+        <!-- <div class=" modal is-hidden " data-modal>
+          <div class="modal-windov">
+              <h2 class="modal-title">Підпишіться на розсилку</h2>
+            <form class="modal-form">
+              <label class="modal-label">E-mail
+                <input required type="text" class="modal-input">
+              </label>
+              <button class="modal-button" type="submit">Відправити</button>
+              </form>
+            </div>
+            </div> -->
       </div>
       <div class="footer-div">
   
@@ -170,7 +181,16 @@
       </li>
       </ul>
       </div>
-      </div>
-      </footer>
+      <div class="footer-form">
+        <h2 class="footer-h2">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
+       
+        <form action="subscribe.php" method="post">
+          <div class="footer-div2">
+          <input class="footer-input" type="email" name="email" placeholder="E-mail" required>
+          <button type="submit" class="footer-button">Підписатись<svg class="button-svg">
+        <use href="./pages/symbol-defs.svg#icon-close"></use>
+      </svg></button>
+        </div>
+        </form>
 </body>
 </html>
