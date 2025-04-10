@@ -8,13 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="./css/resed.css">
    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-         <a class="header-logo" href="./index.html"><span class="header-web">Web</span>Studio</a> 
+         <a class="header-logo"data-aos="fade-up-right" href="./index.html"><span class="header-web" >Web</span>Studio</a> 
       <nav class="header-nav">
         <ul class="header-list">
           <li class="header-item" ><a href="./index.html" class="header-avatar">Студія </a></li>
@@ -38,8 +43,12 @@
       <!-- Ефективні рішуння для вашого бізнесу -->
       <section class="biznes">
         <div class="container ">
-        <h1 class="biznes-blockquote">Ефективні рішeння для вашого бізнесу</h1>
-        <button class="biznes-button" type="button" data-modal-open>Замовити послугу</button>
+        <h1 class="biznes-blockquote"data-aos="flip-left"data-aos-easing="linear"
+        data-aos-duration="1500">Ефективні рішeння для вашого бізнесу</h1>
+        <button class="biznes-button" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500"type="button" data-modal-open>Замовити послугу</button>
       </div>
       </section>
       <!-- ditels -->
@@ -82,12 +91,12 @@
         <div class="container">
         <h2 class="doing-snippet">Чим ми займаемся</h2>
         <ul class="doing-list">
-          <li class="doing-caption"><img src="./pages/work.jpg" alt="comp" />
-          <p class="doing-hozihn">Десктопні додатки</p></li>
+          <li class="doing-caption"  ><img src="./pages/work.jpg" alt="comp" />
+          <p class="doing-hozihn" data-aos="fade-up">Десктопні додатки</p></li>
           <li class="doing-caption"><img src="./pages/leptop.jpg" alt="tel" />
-          <p class="doing-hozihn">Мобільні додатки</p></li>
+          <p class="doing-hozihn" data-aos="fade-up">Мобільні додатки</p></li>
           <li class="doing-caption"><img src="./pages/planshet.jpg" alt="tablet" />
-            <p class="doing-hozihn">Дизайнерські рішення</p></li>
+            <p class="doing-hozihn" data-aos="fade-up">Дизайнерські рішення</p></li>
         </ul>
       </div>
       </section>
@@ -399,15 +408,12 @@
     <script src="./js/modal.js " type="module"></script>
 
 
-
-
-
-   
-
-
-
     
     <!-- ----------------------------------------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
   </body>
 </html>
