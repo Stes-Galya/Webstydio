@@ -1,0 +1,115 @@
+.cart-item{
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+    overflow: hidden; 
+}
+.cart-item:hover{
+
+    .cart-hover{
+         transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 1;
+transform: translateY(0);
+    }
+}
+.cart-reletive{
+    overflow: hidden;
+    position: relative;
+}
+
+.cart-hover{
+     color: var(--fon-color);
+    transition-property:transform;
+    transition-duration: 1000ms;
+    transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1) ;
+    transform: translateY(100%);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.54px;
+position: absolute;
+top: 0;
+left: 0;
+padding: 50px;
+background-color: rgba(33, 150, 243, 0.90);
+z-index: 1;
+opacity: 0; 
+
+}
+
+.cart-list{
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    }
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+     gap: 8px; 
+    margin-bottom: 50px;
+
+}
+
+.cart-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-item{
+    outline:1px solid var(--ramka-color) ;
+}
+
+ .cart{
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
+ .cart-text{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    background-color:var(--aggretext-color); 
+}
+.cart-dox{
+     padding-top:20px;
+    padding-bottom: 20px; 
+    background-color: var(--aggretext-color);
+    padding-left:24px ;
+    padding-right: 24px;
+    
+}
+.cart-item:hover{
+    box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.10), 1px 2px 2px 3px rgba(0, 0, 0, 0.08), 1px 2px 2px 3px rgba(0, 0, 0, 0.12);
+   
+    
+}
+.cart-desc{
+    margin-top: 4px;
+    color: var(--text2-color);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.87;
+letter-spacing: 0.48px;
+background-color: var(--aggretext-color);
+}
+.cart-button{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625; 
+    letter-spacing: 0.48px;
+    border:none;
+   padding: 6px 25px 6px 25px;
+   border-radius: 5px;
+}
+.cart-button:hover{
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--aggretext-color);
+    background-color: var(--button-color);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12)
+
+}

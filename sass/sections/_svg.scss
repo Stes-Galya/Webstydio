@@ -1,0 +1,44 @@
+.svg{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.svg-list{
+    display: flex;
+    gap: 30px;
+    justify-content: center; 
+}
+.main-svg{
+    width: 106px;
+height: 60px;
+fill: var(--svg-color);
+}
+
+.svg-item{
+    border: 1px solid var(--svg-color);
+    padding: 16px 32px 16px 32px ;
+    border-radius: 4px;
+}
+.svg-item:hover{
+    border: 1px solid var(--button-color);
+    transition-property:border;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    .main-svg{
+        fill: var(--button-color);
+        transition-property:fill;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.svg-text{
+    color: var(--text-color);
+
+text-align: center;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px;
+margin-bottom: 50px;
+}
