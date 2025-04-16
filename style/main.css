@@ -231,27 +231,6 @@ img {
   padding-top: 94px;
 }
 
-.doing-caption {
-  position: relative;
-}
-
-.doing-hozihn {
-  color: var(--fon-color);
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background-color: rgba(47, 48, 58, 0.8);
-  width: 100%;
-}
-
 .ditels-caption::before {
   content: "";
   display: block;
@@ -303,6 +282,48 @@ img {
 .ditels {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+
+.doing-caption {
+  position: relative;
+}
+
+.doing-hozihn {
+  color: var(--fon-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+}
+
+.doing-caption {
+  position: relative;
+}
+
+.doing-hozihn {
+  color: var(--fon-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
 }
 
 .doing-caption {
@@ -390,7 +411,7 @@ img {
   padding-bottom: 94px;
 }
 
-.content-item {
+.tim-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
@@ -443,7 +464,7 @@ img {
   justify-content: center;
 }
 
-.main-svg {
+.svg-svg {
   width: 106px;
   height: 60px;
   fill: var(--svg-color);
@@ -461,7 +482,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.svg-item:hover .main-svg {
+.svg-item:hover .svg-svg {
   fill: var(--button-color);
   transition-property: fill;
   transition-duration: 250ms;
@@ -757,8 +778,8 @@ img {
 }
 
 .windov-svg {
-  width: 24px;
-  height: 24px;
+  width: 1px;
+  height: 1px;
   fill: var(--aggrefon-color);
 }
 
@@ -774,16 +795,6 @@ img {
   transition-duration: 1500ms;
   transition-timing-function: ease-in;
   transform: scale(1);
-}
-
-.is-hidden .windov {
-  /* transform: translate(1000px,1000px) rotate(720deg); */
-  transform: scale(0) rotate(360deg) skew(20deg, 30deg);
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .windov-close {
