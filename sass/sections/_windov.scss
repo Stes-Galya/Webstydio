@@ -10,7 +10,7 @@
    
 }
 
-.windov-svg{
+.windov-cross{
     width: 1px;
     height: 1px;
     fill: var(--aggrefon-color);
@@ -171,5 +171,15 @@ padding-left: 50px;
     resize: none;
     margin-left: 40px;
     padding: 12px 16px 12px 16px ;
+
+}
+// .is-hidden .windov{
+//     /* transform: translate(1000px,1000px) rotate(720deg); */
+//    transform: scale(0) rotate(360deg)
+//    skew(20deg,30deg);
+// }
+.is-hidden{
+opacity: 0;
+pointer-events: none;
 
 }

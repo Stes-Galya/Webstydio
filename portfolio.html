@@ -11,10 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css">
-      <link rel="stylesheet" href="./css/mein.css"> 
-    <link rel="stylesheet" href="./css/resed.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="./style/main.min.css">
 </head>
 <body>
   <header class="header">
@@ -41,12 +39,12 @@
       <main>
         <section class="cart">
           <div class="container">
-        <ul class="container">
-          <li class="batton-item"><button class="cart-button">Усі</button></li>
-          <li class="batton-item"><button class="cart-button">Веб-сайти</button></li>
-          <li class="batton-item"><button class="cart-button">Додатки</button></li>
-          <li class="batton-item"><button class="cart-button">Дизайн</button></li>
-          <li class="batton-item"><button class="cart-button">Маркетинг</button></li>
+        <ul class="button-list">
+          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Усі</button></li>
+          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Веб-сайти</button></li>
+          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Додатки</button></li>
+          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Дизайн</button></li>
+          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Маркетинг</button></li>
         </ul>
 <ul class="cart-list">
   <li class="cart-item">
@@ -214,7 +212,7 @@
         <form action="subscribe.php" method="post">
           <div class="footer-div2">
           <input class="footer-input" type="email" name="email" placeholder="E-mail" required>
-          <button type="submit" class="footer-button">Підписатись<svg class="footer-telegram">
+          <button type="submit" class="footer-button" >Підписатись<svg class="footer-telegram">
         <use href="../pages/symbol-defs.svg#icon-telegram"></use>
       </svg></button>
       
@@ -224,5 +222,10 @@
       </div>
       </div>
       </footer>
+      <script src="./js/modal.js " type="module"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>

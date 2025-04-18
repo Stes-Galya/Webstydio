@@ -693,7 +693,7 @@ img {
   row-gap: 30px;
 }
 
-.cart-container {
+.button-list {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -777,7 +777,7 @@ img {
   align-items: center;
 }
 
-.windov-svg {
+.windov-cross {
   width: 1px;
   height: 1px;
   fill: var(--aggrefon-color);
@@ -938,4 +938,9 @@ img {
   resize: none;
   margin-left: 40px;
   padding: 12px 16px 12px 16px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
