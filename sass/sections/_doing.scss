@@ -1,50 +1,12 @@
+.doing{
+    display: flex;
+    text-align: center;
+    padding-bottom:94px;
 
-.doing-caption{
-    position: relative;
-}
-.doing-hozihn{
-    color: var(--fon-color);
-text-align: center;
-font-size: 14px;
-font-weight: 700;
-line-height: 1.14;
-letter-spacing: 0.42px;
-text-transform: uppercase;
-position: absolute;
-bottom: 0;
-left: 0;
-padding-top: 27px;
-padding-bottom: 27px;
-background-color: rgba(47, 48, 58, 0.80);
 
-width: 100%;
-}
-.doing-caption{
-    position: relative;
-}
-.doing-hozihn{
-    color: var(--fon-color);
-text-align: center;
-font-size: 14px;
-font-weight: 700;
-line-height: 1.14;
-letter-spacing: 0.42px;
-text-transform: uppercase;
-position: absolute;
-bottom: 0;
-left: 0;
-padding-top: 27px;
-padding-bottom: 27px;
-background-color: rgba(47, 48, 58, 0.80);
 
-width: 100%;
-}
-
-.doing-caption{
-    flex-basis: calc((100% - 60px) / 3);
-}
-.doing-snippet{
-    color: var(--text-color);
+&__snippet{
+    color: $text-color;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
@@ -53,17 +15,69 @@ align-items: center;
 justify-content: center;
 margin-bottom: 50px;
 }
-.doing-caption{
-    justify-content: center;
-}
-.doing{
-    display: flex;
-    text-align: center;
-    padding-bottom:94px;
 
-}
-.doing-list{
+
+
+&__list{
 display: flex;
  gap: 30px; 
 column-gap: 30px;
 }
+&__caption{
+    position: relative;
+}
+
+
+
+&__hozihn{
+    color:$fon-color;
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+position: absolute;
+bottom: 0;
+left: 0;
+padding-top: 27px;
+padding-bottom: 27px;
+background-color: rgba(47, 48, 58, 0.80);
+
+width: 100%;
+}
+
+
+
+
+&__caption{
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+    justify-content: center;
+}
+
+
+}
+
+
+
+// .doing-hozihn{
+//     color:$fon-color;
+// text-align: center;
+// font-size: 14px;
+// font-weight: 700;
+// line-height: 1.14;
+// letter-spacing: 0.42px;
+// text-transform: uppercase;
+// position: absolute;
+// bottom: 0;
+// left: 0;
+// padding-top: 27px;
+// padding-bottom: 27px;
+// background-color: rgba(47, 48, 58, 0.80);
+
+// width: 100%;
+// }
+
+
+

@@ -7,32 +7,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
-}
-
-.windov-cross{
-    width: 1px;
-    height: 1px;
-    fill: var(--aggrefon-color);
+  
     
-    
-}
-.windov-div{
+&__box{
     opacity: 1;
     width: 528px;
 height: 581px;
 border-radius: 4px;
 background: #FFF;
 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-/* transform: translate(0) rotate(0); */
-
 transition-property:transform;
 transition-duration: 1500ms;
 transition-timing-function: ease-in;
 transform: scale(1);
 }
 
-.windov-close{
+
+
+&__close{
     width: 30px;
 height: 30px;
 border-radius: 50%;
@@ -44,9 +36,18 @@ background-color: transparent;
    display: flex;
    justify-content: center;
    align-items: center;
+   fill:$logo-color;
 }
-.windov-title{
-    color:var(--text-color);
+
+
+&__cross{
+    width: 1px;
+    height: 1px;
+    fill:$logo-color;
+}
+
+&__title{
+    color:$text-color;
 margin-top: 40px;
 text-align: center;
 font-size: 20px;
@@ -55,8 +56,9 @@ font-weight: 700;
 line-height:1.15;
 letter-spacing: 0.6px;
 }
-.windov-label{
-    color: var(--text2-color);
+
+&__label{
+    color: $text2-color;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
@@ -65,10 +67,9 @@ letter-spacing: 0.12px;
 margin-left: 40px;
 position: relative;
 }
-.windov-check{
 
-}
-.windov-svg{
+
+&__image{
     width: 18px;
     height: 18px;
     fill: #212121;
@@ -76,58 +77,16 @@ position: relative;
     top: 30px;
     left: 12px;
 }
-.windov-svg:hover{
-    fill: var(--button-color);
-}
-.windov-checkbox{
-    display: flex;
-    margin-right: auto;
-     margin-left: 52px; 
- 
 
-}
-.windov-button{
-    color:var(--aggretext-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height:1.87;
-    letter-spacing: 0.96px;
-    padding:  10px 52px 10px 52px;
-    background-color: var(--button-color);
-    border: none;
-    margin-top: 30px;
-    margin-left: 164px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 
+&__image:hover{
+    fill: $button-color;
 }
-.windov-href{
-  
-margin-left: 5px;
-    color: var(--button-color);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.42px;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: none;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
-}
-.windov-text{
-    color: var(--text2-color);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height:1.7; 
-letter-spacing: 0.42px;
-margin-left: 5px;
-}
-.windov-input{
+
+
+
+
+&__input{
     width: 448px;
 height: 40px;
 flex-shrink: 0;
@@ -140,30 +99,33 @@ margin-left: 40px;
 padding-left: 50px;
 
 }
-.windov-input:hover,
-.windov-input:focus
+&__input:hover,
+&__input:focus
 {
     transition-property:outline;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
-  outline:  1px solid var(--button-color);
+  outline:  1px solid $button-color;
    
 }
-.windov-input:hover + .windov-svg,
-.windov-input:focus + .windov-svg{
-    fill:var(--button-color) ;
+&__input:hover + &__image,
+&__input:focus + &__image{
+    fill:$button-color ;
     transition-property:fill;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* border: 1px solid var(--button-color);
-.windov-svg{     
-    
-    fill: var(--button-color);
-} */
-.windov-coment{
+
+&__checkbox{
+    display: flex;
+    margin-right: auto;
+     margin-left: 52px; 
+ 
+}
+
+&__coment{
     width: 448px;
     height: 120px;
     border-radius: 4px;
@@ -173,6 +135,67 @@ padding-left: 50px;
     padding: 12px 16px 12px 16px ;
 
 }
+
+&__text{
+    color: $text2-color;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height:1.7; 
+letter-spacing: 0.42px;
+margin-left: 5px;
+}
+
+&__button{
+    color:$aggretext-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height:1.87;
+    letter-spacing: 0.96px;
+    padding:  10px 52px 10px 52px;
+    background-color:$button-color;
+    border: none;
+    margin-top: 30px;
+    margin-left: 164px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+
+&__href{
+  
+margin-left: 5px;
+    color: $button-color;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
+
+
+
+
+
+}
+
+
+
+
+
+/* border: 1px solid $button-color;
+.windov-svg{     
+    
+    fill: $button-color;
+} */
+
 // .is-hidden .windov{
 //     /* transform: translate(1000px,1000px) rotate(720deg); */
 //    transform: scale(0) rotate(360deg)
