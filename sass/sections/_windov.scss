@@ -32,18 +32,23 @@ border-radius: 50%;
 border: 1px solid   rgba(0, 0, 0, 0.3);
 position: absolute;
 background-color: transparent;
-    top: 12px;
-   right: 15px;
+    top: 8px;
+   right: 8px;
    display: flex;
    justify-content: center;
    align-items: center;
    fill:$logo-color;
+   &:hover{
+    .windov__cross{
+        fill:$button-color;
+    }
+   }
 }
 
 
 &__cross{
-    width: 1px;
-    height: 1px;
+    width: 18px;
+    height: 18px;
     fill:$logo-color;
 }
 

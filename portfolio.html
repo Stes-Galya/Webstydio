@@ -1,233 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <link rel="stylesheet" href="./style/main.min.css">
-</head>
-<body>
- 
-     <header class="header">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
       <div class="container header__container">
-         <a class="header__logo"  data-aos="fade-down-right" href="./index.html"><span class="header__web" >Web</span>Studio</a> 
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item" ><a href="./index.html" class="header__avatar">Студія </a></li>
-          <li  class="header__item"><a href="./portfolio.html" class="header__avatar"> Портфоліо</a></li>
-          <li  class="header__item"><a href="#"   class="header__avatar">Контакти </a></li>
+        <a class="header__logo" data-aos="fade-down-right" href="./index.html"
+          ><span class="header__web">Web</span>Studio</a
+        >
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="./index.html" class="header__avatar">Студія </a>
+            </li>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__avatar"> Портфоліо</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__avatar">Контакти </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="mailto:info@devstudio.com" class="header__thumb">
+              <svg class="header__element">
+                <use href="./pages/symbol-defs.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="tel:+380961111111" class="header__thumb"
+              ><svg class="header__svg">
+                <use href="./pages/symbol-defs.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul class="header__items">
-        <li class="header__item"><a href="mailto:info@devstudio.com" class="header__thumb">
-         <svg class="header__element">
-            <use href="./pages/symbol-defs.svg#icon-envelope"></use>
-          </svg>info@devstudio.com</a></li>
-        <li class="header__item"><a href="tel:+380961111111" class="header__thumb "><svg class="header__svg">
-          <use href="./pages/symbol-defs.svg#icon-smartphone"></use>
-        </svg>+38 096 111 11 11</a></li>
-      </ul>
-    </div>
-    
+      </div>
     </header>
-      <main>
-        <section class="cart">
-          <div class="container">
-        <ul class="button-list">
-          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Усі</button></li>
-          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Веб-сайти</button></li>
-          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Додатки</button></li>
-          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Дизайн</button></li>
-          <li class="batton-item"data-aos="zoom-in"><button class="cart-button">Маркетинг</button></li>
-        </ul>
-<ul class="cart-list">
-  <li class="cart-item">
-    <div class="cart-reletive">
-<img src="./pages/veb.jpg"  class="cart-foto" alt="">
-<p class="cart-hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить 
-  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-</div>
-<div class="cart-dox">
-    <h3 class="cart-text">Технокряк</h3>
-    <p class="cart-desc">Веб-сайт</p>
-  </div>
-  </li>
-  <li class="cart-item">
-    <div class="cart-reletive">
-    <img src="./pages/valebol.jpg"  class="cart-foto" alt="">
-    <p class="cart-hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить 
-      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="cart-dox">
-    <h3 class="cart-text">Постер New Orlean vs Golden Star</h3>
-    <p class="cart-desc">Дизайн</p>
-    </div>
-  </li>
-  <li class="cart-item">
-    <div class="cart-reletive">
-    <img src="./pages/restoran.jpg"  class="cart-foto" alt="">
-    <p class="cart-hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить 
-      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-     <div class="cart-dox">
-    <h3 class="cart-text">Ресторан Seafood</h3>
-    <p class="cart-desc">Додаток</p>
-    </div>
-  </li>
-  <li class="cart-item">
-    <div class="cart-reletive">
-   <img src="./pages/prime.jpg"  class="cart-foto" alt="">
-   <p class="cart-hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить 
-    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-  </div>
-    <div class="cart-dox">
-    <h3 class="cartn-text">Проєкт Prime</h3>
-    <p class="cart-desc">Маркетинг</p>
-  </div>
-  </li>
-  <li class="cart-item">
-    <div class="cart-reletive">
-    <img src="./pages/box.jpg"  class="cart-foto" alt="">
-    <p class="cart-hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить 
-      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="tim-dox">
-    <h3 class="cart-text">Проєкт Boxes</h3>
-    <p class="cart-desc"> Додаток</p>
-  </div>
-  </li>
-  <li class="cart-item">
-    <div class="cart-reletive">
-    <img src="./pages/campyter.jpg"  class="cart-foto" alt="">
-    <p class="cart-hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить 
-      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="cart-dox">
-    <h3 class="cart-text">Inspiration has no Borders</h3>
-    <p class="cart-desc">Веб-сайт</p>
-  </div>
-  </li>
-  <li class="cart-item">
-    <div class="cart-reletive">
-    <img src="./pages/megazine.jpg"  class="cart-foto" alt="">
-    <p class="cart-hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить 
-      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="cart-dox">
-    <h3 class="cart-text">Видання Limited Edition</h3>
-    <p class="cart-desc">Дизайн</p>
-  </div>
-  </li>
-  <li class="cart-item">
-    <div class="cart-reletive">
-    <img src="./pages/lab.jpg"  class="cart-foto" alt="">
-    <p class="cart-hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить 
-      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="cart-dox">
-    <h3 class="cart-text">Проєкт LAB</h3>
-    <p class="cart-desc">Маркетинг</p>
-  </div>
-  </li>
-  <li class="cart-item">
-    <div class="cart-reletive">
-    <img src="./pages/noytbyk.jpg"  class="cart-foto" alt="">
-    <p class="cart-hover">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить 
-      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
+    <main>
+      <section class="cart">
+        <div class="container">
+          <ul class="cart__lists">
+            <li class="cart__items" data-aos="zoom-in">
+              <button class="cart__button">Усі</button>
+            </li>
+            <li class="cart__items" data-aos="zoom-in">
+              <button class="cart__button">Веб-сайти</button>
+            </li>
+            <li class="cart__items" data-aos="zoom-in">
+              <button class="cart__button">Додатки</button>
+            </li>
+            <li class="cart__items" data-aos="zoom-in">
+              <button class="cart__button">Дизайн</button>
+            </li>
+            <li class="cart__items" data-aos="zoom-in">
+              <button class="cart__button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="cart__list">
+            <li class="cart__item">
+              <div class="cart__reletive">
+                <img src="./pages/veb.jpg" class="cart__foto" alt="" />
+                <p class="cart__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="cart__dox">
+                <h3 class="cart__text">Технокряк</h3>
+                <p class="cart__desc">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="cart__item">
+              <div class="cart__reletive">
+                <img src="./pages/valebol.jpg" class="cart__foto" alt="" />
+                <p class="cart__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="cart__dox">
+                <h3 class="cart__text">Постер New Orlean vs Golden Star</h3>
+                <p class="cart__desc">Дизайн</p>
+              </div>
+            </li>
+            <li class="cart__item">
+              <div class="cart__reletive">
+                <img src="./pages/restoran.jpg" class="cart__foto" alt="" />
+                <p class="cart__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="cart__dox">
+                <h3 class="cart__text">Ресторан Seafood</h3>
+                <p class="cart__desc">Додаток</p>
+              </div>
+            </li>
+            <li class="cart__item">
+              <div class="cart__reletive">
+                <img src="./pages/prime.jpg" class="cart__foto" alt="" />
+                <p class="cart__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="cart__dox">
+                <h3 class="cartn__text">Проєкт Prime</h3>
+                <p class="cart__desc">Маркетинг</p>
+              </div>
+            </li>
+            <li class="cart__item">
+              <div class="cart__reletive">
+                <img src="./pages/box.jpg" class="cart__foto" alt="" />
+                <p class="cart__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="cart__dox">
+                <h3 class="cart__text">Проєкт Boxes</h3>
+                <p class="cart__desc">Додаток</p>
+              </div>
+            </li>
+            <li class="cart__item">
+              <div class="cart__reletive">
+                <img src="./pages/campyter.jpg" class="cart__foto" alt="" />
+                <p class="cart__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="cart__dox">
+                <h3 class="cart__text">Inspiration has no Borders</h3>
+                <p class="cart__desc">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="cart__item">
+              <div class="cart__reletive">
+                <img src="./pages/megazine.jpg" class="cart__foto" alt="" />
+                <p class="cart__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="cart__dox">
+                <h3 class="cart__text">Видання Limited Edition</h3>
+                <p class="cart__desc">Дизайн</p>
+              </div>
+            </li>
+            <li class="cart__item">
+              <div class="cart__reletive">
+                <img src="./pages/lab.jpg" class="cart__foto" alt="" />
+                <p class="cart__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="cart__dox">
+                <h3 class="cart__text">Проєкт LAB</h3>
+                <p class="cart__desc">Маркетинг</p>
+              </div>
+            </li>
+            <li class="cart__item">
+              <div class="cart__reletive">
+                <img src="./pages/noytbyk.jpg" class="cart__foto" alt="" />
+                <p class="cart__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
 
-    <div class="cart-dox">
-    <h3 class="cart-text">Growing Business</h3>
-    <p class="cart-desc">Додаток</p>
-  </div>
-  </li>
-</ul>
-</div>
-</section>
-      </main>
-      <footer class="footer">
+              <div class="cart__dox">
+                <h3 class="cart__text">Growing Business</h3>
+                <p class="cart__desc">Додаток</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container footer__box">
         <div>
-      <a class="footer__thumb "href="./index.html"><span class="footer__web">Web</span>Studio</a>
-      <address  class="footer__thumbnail">
-        <a class="footer__avatar"
-          href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.5190802,30.4385136,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4d29b9e369069:0xff64663a5fd75cd5!8m2!3d50.5190802!4d30.4385136!16s%2Fg%2F11hz60_tnl?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
-          target="_blank"
-          >м. Київ, пр-т Лесі Українки, 26</a>
-        <ul class="footer__items">
-          <li  ><a href="mailto:info@devstudio.com" class="footer__list">info@devstudio.com</a></li>
-          <li ><a href="tel:+380961111111" class="footer__list">+38 096 111 11 11 </a></li>
-         
-        </ul>
-      </address>
+          <a class="footer__thumb" href="./index.html"
+            ><span class="footer__web">Web</span>Studio</a
+          >
+          <address class="footer__thumbnail">
+            <a
+              class="footer__avatar"
+              href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.5190802,30.4385136,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4d29b9e369069:0xff64663a5fd75cd5!8m2!3d50.5190802!4d30.4385136!16s%2Fg%2F11hz60_tnl?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+            <ul class="footer__lists">
+              <li>
+                <a href="mailto:info@devstudio.com" class="footer__list"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="footer__list"
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__wrapper">
+          <h2 class="footer__slogan">приєднуйтесь</h2>
+          <ul class="footer__items">
+            <li class="footer__item">
+              <a href="" class="footer__href">
+                <svg class="footer__svg">
+                  <use href="./pages/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__li">
+              <a href="" class="footer__href">
+                <svg class="footer__svg">
+                  <use href="./pages/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__li">
+              <a href="" class="footer__href">
+                <svg class="footer__svg">
+                  <use href="./pages/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a href="" class="footer__href">
+                <svg class="footer__svg">
+                  <use href="./pages/symbol-defs.svg#icon-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__form">
+          <h2 class="footer__desc">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
 
-    </div>
-    <div class="footer-box">
-
-      <h2 class="footer__slogan ">приєднуйтесь</h2>
-      <ul class="footer__items">
-        <li class="footer__item">
-      <a href="" class="footer__href">
-        <svg class="footer__svg">
-          <use href="./pages/symbol-defs.svg#icon-instagram">
-          </use> 
-        </svg>
-      </a>
-      </li>
-      <li class="footer__li">
-      <a href="" class="footer__href">
-        <svg class="footer__svg">
-          <use href="./pages/symbol-defs.svg#icon-twitter">
-          </use> 
-        </svg>
-      </a>
-    </li>
-      <li class="footer__li">
-      <a href="" class="footer__href">
-        <svg class="footer__svg">
-          <use href="./pages/symbol-defs.svg#icon-facebook">
-          </use> 
-        </svg>
-      </a>
-    </li>
-      <li class="footer-li">
-      <a href="" class="footer__href">
-        <svg class="footer__svg">
-          <use href="./pages/symbol-defs.svg#icon-in">
-          </use> 
-        </svg>
-      </a>
-    </li>
-    </ul>
-    </div>
-    <div class="footer__form">
-      <h2 class="footer__desc">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
-     
-      <form action="subscribe.php" method="post">
-        <div class="footer__box2">
-        <input class="footer__input" type="email" name="email" placeholder="E-mail" required>
-        <button type="submit" class="footer__button"  data-aos="flip-left">Підписатись<svg class="footer__telegram">
-      <use href="./pages/symbol-defs.svg#icon-telegram"></use>
-    </svg></button>
-    
+          <form action="subscribe.php" method="post">
+            <div class="footer__box2">
+              <input
+                class="footer__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+              <button type="submit" class="footer__button" data-aos="flip-left">
+                Підписатись<svg class="footer__telegram">
+                  <use href="./pages/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-      </form>
-  
-    </div>
-    </div>
     </footer>
-      <script src="./js/modal.js " type="module"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-</body>
+    <script src="./js/modal.js " type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

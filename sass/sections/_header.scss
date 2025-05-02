@@ -95,7 +95,8 @@
     @extend %transition;
     // transition-duration: 250ms;
     // transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-    &__svg {
+   .header__element,
+   .header__svg{
       fill: $button-color;
       @extend %transition;
       transition-property: color;

@@ -32,7 +32,7 @@ margin-bottom: 50px;
         // transition-duration: 250ms;
         // transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
       
-    &__svg{
+    .picture__svg{
         fill:$button-color;
         transition-property:fill;
           @extend %transition;
