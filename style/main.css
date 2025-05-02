@@ -16,6 +16,11 @@ h1, h2, h3, h4, p {
   margin: 0;
 }
 
+.windov__input:hover + .windov__image, .windov__input:focus + .windov__image, .windov__input:hover, .windov__input:focus, .cart-button:hover, .cart-hover, .footer__href:hover__svg, .footer__href:hover, .picture__item:hover__svg, .picture__item:hover, .tim__href:hover__svg, .tim__href:hover, .header__thumb:hover__element, .header__thumb:hover__svg, .header__thumb:hover, .header__thumb:hover::after, .header__items, .header__avatar:hover::after, .header__avatar:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -45,7 +50,6 @@ img {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
-  align-items: center;
   margin-right: 93px;
 }
 .header__web {
@@ -61,14 +65,10 @@ img {
 .header__avatar:hover {
   color: #2196F3;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__avatar:hover::after {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__avatar {
   color: #212121;
@@ -94,8 +94,6 @@ img {
   gap: 50px;
   margin-left: auto;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__thumb::after {
   content: "";
@@ -122,26 +120,18 @@ img {
 .header__thumb:hover::after {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__thumb:hover {
   color: #2196F3;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__thumb:hover__svg {
   fill: #2196F3;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__thumb:hover__element {
   fill: #2196F3;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__element {
   width: 16px;
@@ -164,8 +154,6 @@ img {
   background-color: #2F303A;
   padding-top: 200px;
   padding-bottom: 200px;
-  display: flex;
-  gap: 50;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../pages/fon.jpg);
 }
@@ -245,7 +233,6 @@ img {
 }
 
 .doing {
-  display: flex;
   text-align: center;
   padding-bottom: 94px;
 }
@@ -287,11 +274,9 @@ img {
 .doing__caption {
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
-  justify-content: center;
 }
 
 .tim {
-  display: flex;
   background-color: #F5F4FA;
   text-align: center;
   padding-top: 94px;
@@ -303,7 +288,6 @@ img {
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
-  justify-content: center;
   margin-bottom: 50px;
 }
 .tim__list {
@@ -339,15 +323,16 @@ img {
 }
 .tim__div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 10px;
   margin-left: 15px;
   margin-right: 15px;
 }
 .tim__href {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: #FFF;
   border-radius: 50%;
   width: 44px;
@@ -357,14 +342,10 @@ img {
 .tim__href:hover {
   background-color: #2196F3;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tim__href:hover__svg {
   fill: #FFF;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tim__svg {
   fill: #AFB1B8;
@@ -399,14 +380,10 @@ img {
 .picture__item:hover {
   border: 1px solid #2196F3;
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .picture__item:hover__svg {
   fill: #2196F3;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .picture__svg {
   width: 106px;
@@ -453,7 +430,7 @@ img {
   display: inline-block;
   margin-top: 9px;
 }
-.footer__box {
+.footer__wrapper {
   margin-left: 70px;
 }
 .footer__slogan {
@@ -470,6 +447,11 @@ img {
   display: flex;
   gap: 10px;
 }
+.footer__lists {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
 .footer__svg {
   fill: #FFF;
   width: 20px;
@@ -477,8 +459,9 @@ img {
 }
 .footer__href {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
   background-color: #757575;
   border-radius: 50%;
   width: 44px;
@@ -487,14 +470,10 @@ img {
 .footer__href:hover {
   background-color: #2196F3;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__href:hover__svg {
   fill: #FFF;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__form {
   border-radius: 10px;
@@ -513,6 +492,8 @@ img {
 .footer__box2 {
   display: flex;
   justify-content: start;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 .footer__desc {
   margin-left: auto;
@@ -557,7 +538,6 @@ img {
 }
 
 .cart-item:hover .cart-hover {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
   transform: translateY(0);
 }
@@ -570,8 +550,6 @@ img {
 .cart-hover {
   color: #FFF;
   transition-property: transform;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   transform: translateY(100%);
   font-size: 18px;
   font-style: normal;
@@ -588,7 +566,7 @@ img {
 }
 
 .cart-list {
-  display: grid;
+  display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 30px;
@@ -659,8 +637,6 @@ img {
 
 .cart-button:hover {
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #FFF;
   background-color: #2196F3;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -675,6 +651,7 @@ img {
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 .windov__box {
@@ -738,6 +715,7 @@ img {
 }
 .windov__image:hover {
   fill: #2196F3;
+  transition-duration: 250ms;
 }
 .windov__input {
   width: 448px;
@@ -753,16 +731,12 @@ img {
 }
 .windov__input:hover, .windov__input:focus {
   transition-property: outline;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   outline: 1px solid #2196F3;
 }
 .windov__input:hover + .windov__image, .windov__input:focus + .windov__image {
   fill: #2196F3;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .windov__checkbox {
   display: flex;
