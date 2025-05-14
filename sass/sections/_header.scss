@@ -86,7 +86,7 @@ font-size: 26px;
     opacity: 0;
   }
   &__items {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 50px;
     margin-left: auto;
@@ -95,8 +95,16 @@ font-size: 26px;
     // transition-duration: 250ms;
     // transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     // display: none;
+    // flex-direction: column;
     
-
+    @media screen and (min-width: 768px){
+      display: flex; 
+     }
+     @media screen and (min-width: 1200px){
+       gap: 30px;
+       flex-direction: row;
+ 
+     }
 }
   &__thumb::after {
     content: "";
