@@ -202,6 +202,12 @@ img {
     letter-spacing: 0.28px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__cell {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+}
 .header__element {
   width: 16px;
   height: 12px;

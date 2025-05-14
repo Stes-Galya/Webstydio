@@ -94,7 +94,10 @@ font-size: 26px;
     @extend %transition;
     // transition-duration: 250ms;
     // transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    // display: none;
+    
+
+}
   &__thumb::after {
     content: "";
     display: block;
@@ -151,7 +154,12 @@ font-size: 26px;
       }
     }
   }
-
+&__cell{
+  @media screen and (min-width: 1200px){
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+}
   &__element {
     width: 16px;
     height: 12px;
@@ -163,6 +171,7 @@ font-size: 26px;
     height: 16px;
     fill: $text2-color;
     margin-right: 10px;
+ 
   }
 
   &__container {
