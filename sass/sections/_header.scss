@@ -32,22 +32,26 @@ font-size: 26px;
     color: $button-color;
   }
   &__list {
-    display: flex;
-   gap: 52px;
-//          @media screen and ( max-width:768px){
-//   margin-right: 88px;
-// }
-// @media screen and ( max-width:1200px){
-// font-size: 26px;
-//    letter-spacing: 0.78px;
-//     margin-right: 93px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
 
-// }
-@media screen and ( max-width:1200px){
-gap: 51px;
+    @media screen and (min-width: 768px){
+     display: flex; 
+    }
+    @media screen and (min-width: 1200px){
+      gap: 30px;
+      flex-direction: row;
 
-}
-  
+    }
+    &__nav{
+      display: none;
+      @media screen and (min-width: 768px){
+        display: block;
+      }
+   
+    }
   }
   &__item {
     position: relative;
@@ -141,6 +145,10 @@ gap: 51px;
       @extend %transition;
       // transition-duration: 250ms;
       // transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and (min-width: 1200px){
+        font-size: 14px;
+        letter-spacing: 0.28px;
+      }
     }
   }
 
