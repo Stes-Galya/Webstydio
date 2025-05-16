@@ -311,10 +311,12 @@ img {
 /* ================ditels==================================== */
 .ditels {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .ditels {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .ditels__item {
@@ -442,7 +444,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .tim {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -450,27 +452,50 @@ img {
 }
 .tim__snippet {
   color: #212121;
+  text-align: center;
   font-size: 28px;
   font-weight: 700;
-  line-height: 1.17;
+  line-height: 1.16;
   letter-spacing: 0.84px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 1200px) {
   .tim__snippet {
     font-size: 36px;
     letter-spacing: 1.08px;
-    line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 .tim__list {
   display: flex;
   background-color: #F5F4FA;
   text-align: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
+.tim__foto {
+  width: 100%;
+}
 .tim__item {
+  flex-basis: 100%;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   flex-basis: calc((100% - 90px) / 4);
+}
+@media screen and (min-width: 480px) {
+  .tim__item {
+    flex-basis: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tim__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tim__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .tim__dox {
   padding-top: 30px;
@@ -481,13 +506,16 @@ img {
 }
 .tim__dess {
   color: #212121;
+  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
 }
 .tim__copy {
   color: #757575;
+  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.18;
@@ -498,19 +526,20 @@ img {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 .tim__href {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #FFF;
+  padding: 12px 12px;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tim__href:hover {
   background-color: #2196F3;
@@ -524,31 +553,55 @@ img {
   fill: #AFB1B8;
   width: 20px;
   height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .picture {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .picture {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .picture__text {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  letter-spacing: 0.84px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .picture__text {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
 }
 .picture__list {
   display: flex;
   gap: 30px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .picture__item {
-  border: 1px solid #AFB1B8;
-  padding: 16px 32px 16px 32px;
-  border-radius: 4px;
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .picture__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .picture__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 .picture__item:hover {
   border: 1px solid #2196F3;
@@ -561,7 +614,37 @@ img {
 .picture__svg {
   width: 106px;
   height: 60px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #AFB1B8;
+}
+.picture__href {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  height: 92px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .picture__href {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .picture__href {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .picture__href {
+    width: 170px;
+  }
 }
 
 .footer {

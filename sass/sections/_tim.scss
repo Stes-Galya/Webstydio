@@ -3,40 +3,51 @@
   text-align: center;
   padding-top: 60px;
 padding-bottom: 60px;
-  @media screen and ( max-width: 480px){
+@media screen and (min-width: 1200px){
+  padding-top: 94px;
+ padding-bottom: 94px;
+}
 
-  }
-  @media screen and ( max-width:768px){
-   
-  }
-  @media screen and ( max-width: 1200px){
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   &__snippet {
     color: $text-color;
+    text-align: center;
     font-size: 28px;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 1.16;
     letter-spacing: 0.84px;
-    margin-bottom: 50px;
-
+    margin-bottom: 30px;
 @media screen and ( max-width: 1200px){
   font-size: 36px;
   letter-spacing: 1.08px;
-  line-height: 1.16;
+  margin-bottom: 50px;
 }
   }
 
   &__list {
     display: flex;
     background-color: $fon-tim;
-    text-align: center;
+     text-align: center;
+    flex-wrap: wrap;
     gap: 30px;
   }
-
+&__foto{
+  width: 100%;
+  
+}
   &__item {
+    flex-basis: 100%;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     flex-basis: calc((100% - 90px) / 4);
+    @media screen and (min-width: 480px){
+      flex-basis: 450px;
+         }
+          @media screen and (min-width: 768px){
+      flex-basis: calc((100% - 30px) / 2);
+          }
+           @media screen and (min-width: 1200px){
+                flex-basis: calc((100% - 90px) / 4);
+           }
   }
 
   &__dox {
@@ -50,15 +61,17 @@ padding-bottom: 60px;
 
   &__dess {
     color: $text-color;
-
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
+    margin-bottom: 10px;
   }
 
   &__copy {
     color: $text2-color;
+    text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.18;
@@ -70,20 +83,29 @@ padding-bottom: 60px;
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    // margin-left: 15px;
+    // margin-right: 15px;
   }
 
   &__href {
     @include flexbox();
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    background-color: $fon-color;
+    //  display: flex;
+    //  align-items: center;
+    //  justify-content: center;
+    // background-color: $fon-color;
+    // border-radius: 50%;
+    // width: 44px;
+    // height: 44px;
+    // margin-top: 16px;
+      
+    padding: 12px 12px;
     border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__href:hover {
@@ -106,5 +128,8 @@ padding-bottom: 60px;
 
     width: 20px;
     height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
