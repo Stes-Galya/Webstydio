@@ -3,9 +3,28 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__box {
+  & > .container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+    @media screen and (min-width: 768px) {
+      align-items: first baseline;
+      flex-direction: row;
+      }
+    
+      @media screen and (min-width: 1200px) {
+      }
+  }
+  &__box {
+    // display: flex;
+    // align-items: baseline;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+   }
   }
 
   &__thumb {
@@ -14,23 +33,32 @@
     line-height: 1.38;
     letter-spacing: 0.78px;
     font-family: "Raleway";
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
-    display: inline-block;
-    margin-bottom: 20px;
+    // display: inline-block;
+    // margin-bottom: 20px;
+    letter-spacing: 0.72px;
+    @media screen and (min-width: 1200px) {
+      letter-spacing: 0.78px;
+      font-size: 26px;
+    }
   }
 
   &__web {
     color: $button-color;
   }
-
+&__thumbnail{
+  font-style: normal;
+  margin-top: 20px;
+}
+// !!!!!!!!!!!!!!!!!!
   &__avatar {
     color: $aggretext-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
-    display: inline-block;
+    // display: inline-block;
   }
 
   &__list {
@@ -44,7 +72,18 @@
   }
   &__wrapper{
 
-    margin-left: 70px;
+    text-align: center;
+    margin-top: 60px;
+    
+    @media screen and (min-width: 768px) {
+      margin-left: 165px;
+      margin-top: 0;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        text-align: start;
+      }
   }
   &__slogan {
     color: $fon-color;
@@ -64,10 +103,13 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+    margin-top: 9px;
   }
   &__svg {
     fill: $fon-color;
-
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 20px;
     height: 20px;
   }
@@ -96,11 +138,7 @@
     }
   }
 
-  &__form {
-    border-radius: 10px;
-    margin-left: auto;
-  }
-
+ 
   &__telegram {
     width: 24px;
     height: 24px;
@@ -113,16 +151,19 @@
   }
 
   &__box2 {
-    // display: flex;
-    // justify-content: start;
-    // align-items: center;
-    @include flexbox($justify:start,$wrap:nowrap);
+    margin-top: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+          margin-left: auto;
+          margin-top: 0;
+      }
+  
   }
 
   &__desc {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
     color: $fon-color;
     font-size: 14px;
     font-style: normal;
@@ -155,5 +196,58 @@
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     position: relative;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // gap: 20px;
+    @media screen and (min-width: 1200px){
+    gap: 12px;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-left: auto;
+    }
+  }
+  &__input {
+    fill: $aggretext-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 290px;
+    
+  
+    @media screen and (min-width: 480px){
+    width: 450px;
+    }
+  
+    @media screen and (min-width: 1200px){
+      width: 358px;
+    }
+  }
+  &__block {
+    margin-top: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+          margin-left: auto;
+          margin-top: 0;
+      }
+  
+  }
+  &__href{
+    color:$aggretext-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
   }
 }
