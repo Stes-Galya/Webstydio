@@ -18,6 +18,8 @@
     justify-content: center;
      gap: 8px; 
     margin-bottom: 50px;
+   
+      
 }
 
 &__button{
@@ -32,10 +34,23 @@
 }
 &__items{
 
-    // flex-basis: calc((100% - 60px) / 3);
-    // position: relative;
-    // overflow: hidden; 
-    //   outline:1px solid $border-color;
+    flex-basis: 100%;
+    border: 1px solid #eeeeee;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    @media screen and (min-width: 480px){
+    flex-basis: 450px;
+    }
+  
+      @media screen and (min-width: 768px){
+    flex-basis: calc((100% - 30px) / 2);
+    }
+  
+      @media screen and (min-width: 1200px){
+    flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 &__button:hover{
@@ -118,6 +133,7 @@ opacity: 0;
     position: relative;
     overflow: hidden; 
       outline:1px solid $border-color;
+
 }
 
 &__item:hover{

@@ -924,6 +924,28 @@ img {
   padding: 6px 25px 6px 25px;
   border-radius: 5px;
 }
+.cart__items {
+  flex-basis: 100%;
+  border: 1px solid #eeeeee;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .cart__items {
+    flex-basis: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cart__items {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cart__items {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
 .cart__button:hover {
   transition-property: color;
   color: #FFF;
