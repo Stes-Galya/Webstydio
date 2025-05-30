@@ -916,18 +916,25 @@ img {
 .cart__list {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 .cart__lists {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .cart__lists {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cart__lists {
+    margin-bottom: 50px;
+  }
 }
 .cart__button {
   color: #212121;
@@ -939,7 +946,17 @@ img {
   padding: 6px 25px 6px 25px;
   border-radius: 5px;
 }
-.cart__items {
+.cart__foto {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .cart__foto {
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
+  }
+}
+.cart__item {
   flex-basis: 100%;
   border: 1px solid #eeeeee;
   transition-property: box-shadow;
@@ -947,33 +964,41 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
-  .cart__items {
+  .cart__item {
     flex-basis: 450px;
   }
 }
 @media screen and (min-width: 768px) {
-  .cart__items {
+  .cart__item {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .cart__items {
+  .cart__item {
     flex-basis: calc((100% - 60px) / 3);
   }
+}
+.cart__item:hover {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.cart__item:hover .card__desk {
+  opacity: 1;
+}
+.cart__reletive {
+  overflow: hidden;
+  position: relative;
+}
+.cart__img {
+  width: 100%;
+}
+.cart__hover {
+  color: #FFF;
 }
 .cart__button:hover {
   transition-property: color;
   color: #FFF;
   background-color: #2196F3;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-}
-.cart__item:hover .cart__hover {
-  opacity: 1;
-  transform: translateY(0);
-}
-.cart__reletive {
-  overflow: hidden;
-  position: relative;
 }
 .cart__dox {
   padding-top: 20px;
