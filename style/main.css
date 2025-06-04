@@ -981,9 +981,6 @@ img {
 .cart__button:hover, .cart__button:focus {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
-.cart img {
-  width: 100%;
-}
 .cart__item {
   flex-basis: 100%;
   border: 1px solid #eeeeee;
@@ -1016,7 +1013,7 @@ img {
   overflow: hidden;
   position: relative;
 }
-.cart__img {
+.cart__foto {
   width: 100%;
 }
 .cart__hover {
