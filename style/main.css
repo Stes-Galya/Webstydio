@@ -235,42 +235,74 @@ img {
   display: flex;
   align-items: center;
 }
-
-.button__btn {
-  color: #212121;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.48px;
-  border-radius: 4px;
-  background: #F5F4FA;
-  padding: 6px 22px;
-  border: none;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button__btn:hover, .button__btn:focus {
-  color: #212121;
-  background-color: #2196F3;
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-}
-
 .header__menu {
   width: 40px;
   height: 40px;
-  fill: #000;
+  fill: #000000;
+}
+.header__btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
 }
 
-.mobail {
+.mobile {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 1;
+  background-color: #FFF;
+}
+.mobile__link {
+  color: #757575;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.8px;
+}
+.mobile__post {
+  color: #757575;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+}
+.mobile__contact {
+  color: #757575;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.mobile__social {
+  color: #2196F3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+  display: flex;
+  align-items: center;
+}
+.mobile__elements {
+  display: flex;
+  padding-top: 64px;
+  margin-left: 40px;
+  padding-right: 21px;
 }
 
 .is-hidden {
@@ -972,8 +1004,14 @@ img {
 }
 
 .cart {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .cart {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .cart__list {
   display: flex;
