@@ -236,6 +236,48 @@ img {
   align-items: center;
 }
 
+.button__btn {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  background: #F5F4FA;
+  padding: 6px 22px;
+  border: none;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__btn:hover, .button__btn:focus {
+  color: #212121;
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.header__menu {
+  width: 40px;
+  height: 40px;
+  fill: #000;
+}
+
+.mobail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
 .biznes {
   background-color: #2F303A;
   padding-bottom: 118px;
