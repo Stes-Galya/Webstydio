@@ -304,6 +304,14 @@ img {
   margin-left: 40px;
   padding-right: 21px;
 }
+.mobile__elem:not(:last-child) .mobile__social::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+  display: block;
+  margin-left: 10px;
+}
 
 .is-hidden {
   pointer-events: none;
