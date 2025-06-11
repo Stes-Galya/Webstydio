@@ -60,12 +60,14 @@ font-size: 26px;
   &__avatar:hover {
     color: $button-color;
     transition-property: color;
-    @extend %transition;
+    @extend %transition;  
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__avatar:hover::after {
     opacity: 1;
     transition-property: opacity;
     @extend %transition;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__avatar {
     color: $text-color;
@@ -117,7 +119,7 @@ font-size: 26px;
     left: 0;
     bottom: -34px;
     opacity: 0;
-  }
+  }    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &__thumb {
     color: $text2-color;
@@ -130,6 +132,7 @@ font-size: 26px;
     align-items: center;
   }
   &__thumb:hover::after {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
     transition-property: opacity;
     @extend %transition;
@@ -137,6 +140,7 @@ font-size: 26px;
     //   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__thumb:hover {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: $button-color;
     transition-property: color;
     @extend %transition;
@@ -223,7 +227,25 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.18;
 letter-spacing: 0.8px;
+margin-top: 48px;
+margin-left: 40px;
+margin-right: 301px;
   }
+  &__item:nth-child(1){
+    margin-top: 48px;
+margin-left: 40px;
+margin-right: 301px;
+  }
+  &__item:nth-child(2){
+    margin-top: 32px;
+    margin-left: 40px;
+  }
+  &__item:nth-child(3){
+    margin-top: 32px;
+    margin-left: 40px;
+    margin-bottom: 302px;
+  }
+
 
 &__post{
   color: $text2-color;
@@ -232,6 +254,8 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.16;
 letter-spacing: 0.48px;
+margin-left: 40px;
+margin-bottom:32px;
 }&__contact{
   color:$text2-color;
 font-size: 34px;
@@ -239,7 +263,8 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.68px;
-
+margin-left: 40px;
+margin-bottom:32px;
 
 }
 &__social {
@@ -259,6 +284,20 @@ letter-spacing: 0.68px;
 
 
 }
+&__close{
+  width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 1px solid   rgba(0, 0, 0, 0.3);
+position: absolute;
+background-color: transparent;
+  top: 8px;
+ right: 8px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ fill:$logo-color;
+}
 &__elem:not(:last-child) {
   .mobile__social::after {
     content: "";
@@ -268,6 +307,18 @@ letter-spacing: 0.68px;
     display: block;
     margin-left: 10px;
   }
+}
+&__link:hover{
+  color: $button-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__contact:hover{
+  color: $button-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__post:hover{
+  color: $button-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   }
 .is-hidden{

@@ -62,6 +62,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -127,10 +128,12 @@ img {
 .header__avatar:hover {
   color: #2196F3;
   transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__avatar:hover::after {
   opacity: 1;
   transition-property: opacity;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__avatar {
   color: #212121;
@@ -191,10 +194,12 @@ img {
   align-items: center;
 }
 .header__thumb:hover::after {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
   transition-property: opacity;
 }
 .header__thumb:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196F3;
   transition-property: color;
 }
@@ -272,6 +277,23 @@ img {
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.8px;
+  margin-top: 48px;
+  margin-left: 40px;
+  margin-right: 301px;
+}
+.mobile__item:nth-child(1) {
+  margin-top: 48px;
+  margin-left: 40px;
+  margin-right: 301px;
+}
+.mobile__item:nth-child(2) {
+  margin-top: 32px;
+  margin-left: 40px;
+}
+.mobile__item:nth-child(3) {
+  margin-top: 32px;
+  margin-left: 40px;
+  margin-bottom: 302px;
 }
 .mobile__post {
   color: #757575;
@@ -280,6 +302,8 @@ img {
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: 0.48px;
+  margin-left: 40px;
+  margin-bottom: 32px;
 }
 .mobile__contact {
   color: #757575;
@@ -288,6 +312,8 @@ img {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.68px;
+  margin-left: 40px;
+  margin-bottom: 32px;
 }
 .mobile__social {
   color: #2196F3;
@@ -304,6 +330,20 @@ img {
   margin-left: 40px;
   padding-right: 21px;
 }
+.mobile__close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  position: absolute;
+  background-color: transparent;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #000000;
+}
 .mobile__elem:not(:last-child) .mobile__social::after {
   content: "";
   width: 1px;
@@ -311,6 +351,18 @@ img {
   background: rgba(33, 33, 33, 0.2);
   display: block;
   margin-left: 10px;
+}
+.mobile__link:hover {
+  color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__contact:hover {
+  color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__post:hover {
+  color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -638,6 +690,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tim__href:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #2196F3;
   transition-property: background-color;
 }
@@ -700,6 +753,7 @@ img {
   }
 }
 .picture__item:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #2196F3;
   transition-property: border;
 }
@@ -882,6 +936,7 @@ img {
   height: 44px;
 }
 .footer__href:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #2196F3;
   transition-property: background-color;
 }
@@ -1087,6 +1142,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cart__button:hover, .cart__button:focus {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 .cart__item {
@@ -1112,6 +1168,7 @@ img {
   }
 }
 .cart__item:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .cart__item:hover .card__desk {
@@ -1125,6 +1182,7 @@ img {
   width: 100%;
 }
 .cart__hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #FFF;
   width: 100%;
   height: 100%;
@@ -1162,6 +1220,7 @@ img {
   background-color: #FFF;
 }
 .cart__button:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
   color: #FFF;
   background-color: #2196F3;
@@ -1196,6 +1255,7 @@ img {
   background-color: #FFF;
 }
 .cart__hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #FFF;
   transition-property: transform;
   transform: translateY(100%);
@@ -1252,6 +1312,7 @@ img {
   fill: #000000;
 }
 .windov__close:hover .windov__cross {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196F3;
 }
 .windov__cross {
