@@ -364,6 +364,10 @@ img {
   color: #2196F3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.mobile__items {
+  background-color: #FFF;
+  opacity: 1;
+}
 
 .is-hidden {
   pointer-events: none;
